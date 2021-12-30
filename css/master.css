@@ -1,0 +1,102 @@
+input.large { display: flex; }
+input.small { display: none; }
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  height: 75px;
+  padding: 1rem;
+  color : #F2EDD7;
+  background: #755139;
+  font-weight: bold;
+  display: flex;
+  flex-direction: : row;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+}
+header a {
+  text-decoration: none;
+  color : #F2EDD7;
+}
+body {
+  padding-top: 135px;
+  margin: 0px;
+  background-color: #F2EDD7;
+}
+.Title {
+  font-size: calc(2em + 1.2vw);
+  font-family: 'Montserrat',sans-serif;
+  font-weight: 700;
+  margin:0px;
+}
+.TitleContainer {
+  padding-left: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-grow: 1;
+  height: 100%
+}
+.Titleitem {
+  font-size: calc(0.6em + 0.6vw);
+  font-family: 'Montserrat',sans-serif;
+  font-weight: 500;
+  height:107px;
+  display:flex;
+  padding-left: 25px;
+  padding-right: 25px;
+  align-items: center;
+}
+.Titleitem:hover {
+  background-color: #ac6434;
+}
+.TitleMenu {
+  padding-right: 20px;
+  font-size: 24pt;
+
+}
+/* 드랍다운 메뉴 버튼 */
+.dropbtn {
+  padding-right: 24px;
+  background-color : inherit;
+  color : #F2EDD7;
+  font-size: 24px;
+  border: none;
+  cursor: pointer;
+}
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  display: none;
+}
+.dropdown-content {
+  display: none;
+  position: fixed;
+  min-width: 120px;
+}
+.dropdown-content a {
+  color : #F2EDD7;
+  background-color: #755139;
+  padding: 14px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {background-color: #ac6434}
+.show {display:block; right:0px; top: 107px;}
+img.left {
+  float : left;
+  margin-right: 20px;
+  clear: both;
+  width: calc(2em + 1.2vw);
+}
+@media screen and (max-width : 992px) {
+  .dropdown {
+    display:inline-block;
+  }
+  .Titleitem {
+    display:none;
+  }
+}
